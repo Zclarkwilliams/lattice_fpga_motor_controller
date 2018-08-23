@@ -1,0 +1,6 @@
+#Start recording tcl command: 8/22/2018 10:34:08
+#Project Location: C:/lscc/Projects/motor_controller; Project name: motor_controller
+prj_project open "C:/lscc/Projects/motor_controller/motor_controller.ldf"
+prj_src remove "C:/lscc/Projects/motor_controller/impl1/source/drone2.v"
+prj_src add "C:/lscc/Projects/motor_controller/impl1/source/top_motor_controller.v"
+#Stop recording: 8/22/2018 10:34:36
