@@ -1,0 +1,66 @@
+Loading design for application iotiming from file motor_controller_impl1.ncd.
+Design name: drone2
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-6900C
+Package:     CABGA256
+Performance: 6
+Package Status:                     Final          Version 1.16.
+Performance Hardware Data Status:   Final          Version 37.4.
+Loading design for application iotiming from file motor_controller_impl1.ncd.
+Design name: drone2
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-6900C
+Package:     CABGA256
+Performance: M
+Package Status:                     Final          Version 1.16.
+Performance Hardware Data Status:   Final          Version 37.4.
+// Design: drone2
+// Package: CABGA256
+// ncd File: motor_controller_impl1.ncd
+// Version: Diamond (64-bit) 3.10.1.112
+// Written on Mon Aug 27 11:07:57 2018
+// M: Minimum Performance Grade
+// iotiming motor_controller_impl1.ncd motor_controller_impl1.prf -gui -msgset C:/lscc/Projects/motor_controller/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)
+
+
+// Internal_Clock to Input
+
+Port  Internal_Clock
+--------------------------------------------------------
+machx sys_clk       
+machx us_clk        
+throt us_clk        
+
+
+// Internal_Clock to Output
+
+Port            Internal_Clock
+--------------------------------------------------------
+led_data_out[0] sys_clk       
+led_data_out[1] sys_clk       
+led_data_out[2] sys_clk       
+led_data_out[3] sys_clk       
+led_data_out[4] sys_clk       
+led_data_out[5] sys_clk       
+led_data_out[6] sys_clk       
+led_data_out[7] sys_clk       
+motor_1_pwm     us_clk        

@@ -1,0 +1,53 @@
+[ START MERGED ]
+n1799 machxo3_switch_reset_n_c
+[ END MERGED ]
+[ START CLIPPED ]
+GND_net
+VCC_net
+pwm_generator/pwm1/equal_11_0/S1
+pwm_generator/pwm1/equal_11_0/S0
+pwm_generator/pwm1/equal_11_0/CI
+pwm_generator/pwm1/equal_11_10/S1
+pwm_generator/pwm1/equal_11_10/CO
+pwm_generator/pwm1/equal_11_8/S1
+pwm_generator/pwm1/equal_11_8/S0
+pwm_generator/pwm1/equal_11_10_1192/S1
+pwm_generator/pwm1/equal_11_10_1192/S0
+pwm_generator/add_7_17/S1
+pwm_generator/add_7_17/CO
+pwm_generator/add_8_2/S0
+pwm_generator/add_8_2/CI
+pwm_generator/add_8_10/CO
+pwm_generator/add_7_1/S0
+pwm_generator/add_7_1/CI
+us_clk_divider/add_7_15/CO
+us_clk_divider/add_7_1/S0
+us_clk_divider/add_7_1/CI
+receiver/throttle_reader/add_152_1/S0
+receiver/throttle_reader/add_152_1/CI
+receiver/throttle_reader/add_152_17/S1
+receiver/throttle_reader/add_152_17/CO
+[ END CLIPPED ]
+[ START OSC ]
+sys_clk 38.00
+[ END OSC ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.10.1.112 -- WARNING: Map write only section -- Mon Aug 27 12:02:32 2018
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "motor_1_pwm" SITE "L7" ;
+LOCATE COMP "led_data_out[7]" SITE "H11" ;
+LOCATE COMP "led_data_out[6]" SITE "J13" ;
+LOCATE COMP "led_data_out[5]" SITE "J11" ;
+LOCATE COMP "led_data_out[4]" SITE "L12" ;
+LOCATE COMP "led_data_out[3]" SITE "K11" ;
+LOCATE COMP "led_data_out[2]" SITE "L13" ;
+LOCATE COMP "led_data_out[1]" SITE "N15" ;
+LOCATE COMP "led_data_out[0]" SITE "P16" ;
+LOCATE COMP "throttle_pwm" SITE "R6" ;
+LOCATE COMP "machxo3_switch_leds_disp" SITE "N2" ;
+LOCATE COMP "machxo3_switch_reset_n" SITE "N1" ;
+FREQUENCY NET "sys_clk" 38.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

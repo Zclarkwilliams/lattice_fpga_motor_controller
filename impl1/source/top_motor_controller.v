@@ -52,6 +52,7 @@ module drone2 (
 	//input wire aux1_pwm /* synthesis syn_force_pads=1 syn_noprune=1*/ ,
 	//input wire aux2_pwm /* synthesis syn_force_pads=1 syn_noprune=1*/ ,
 	//input wire swa_swb_pwm /* synthesis syn_force_pads=1 syn_noprune=1*/ ,
+	input wire machxo3_switch_leds_disp,
 	input wire machxo3_switch_reset_n);
 
 	//--------------- Receiver Wires --------------//
@@ -170,7 +171,7 @@ module drone2 (
 	always @(posedge sys_clk) begin
 		if (!resetn)
 			led_data_out <= 8'hAA;
-		else if (!machxo3_switch_reset_n)
+		else if (!machxo3_switch_leds_disp)
 			led_data_out <= ~throttle_val;
 		else
 			led_data_out <= ~motor_1_rate;

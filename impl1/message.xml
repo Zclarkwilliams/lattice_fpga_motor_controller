@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v(24): </Dynamic>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/common_defines.v</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_generator_block.v(24): </Dynamic>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/common_defines.v</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_generator_block.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_reader.v(26): </Dynamic>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/common_defines.v</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_reader.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_to_value.v(21): </Dynamic>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/common_defines.v</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_to_value.v</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/receiver.v(27): </Dynamic>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/common_defines.v</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/receiver.v</Navigation>
+            <Navigation>27</Navigation>
+        </Message>
+        <Message>
+            <ID>35901328</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/top_motor_controller.v(38): </Dynamic>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/common_defines.v</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/top_motor_controller.v</Navigation>
+            <Navigation>38</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/top_motor_controller.v(40): </Dynamic>
+            <Dynamic>drone2</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/top_motor_controller.v</Navigation>
+            <Navigation>40</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v(1759): </Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;38.00&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.10_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo3l.v</Navigation>
+            <Navigation>1759</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/us_clk.v(13): </Dynamic>
+            <Dynamic>us_clk</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/us_clk.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/receiver.v(29): </Dynamic>
+            <Dynamic>receiver</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/receiver.v</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_reader.v(28): </Dynamic>
+            <Dynamic>pwm_reader(DEFAULT_PWM_TIME_HIGH_US=16'b01111101000)</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_reader.v</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_to_value.v(23): </Dynamic>
+            <Dynamic>pwm_to_value</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_to_value.v</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v(26): </Dynamic>
+            <Dynamic>pwm_generator</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_generator_block.v(26): </Dynamic>
+            <Dynamic>pwm_generator_block</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_generator_block.v</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_generator_block.v(80): </Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_generator_block.v</Navigation>
+            <Navigation>80</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/top_motor_controller.v(60): </Dynamic>
+            <Dynamic>throttle_val[7]</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/top_motor_controller.v</Navigation>
+            <Navigation>60</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/top_motor_controller.v(164): </Dynamic>
+            <Dynamic>motor_2_rate[7]</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/top_motor_controller.v</Navigation>
+            <Navigation>164</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v(32): </Dynamic>
+            <Dynamic>\pwm_generator/motor_2_rate[7]</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v(33): </Dynamic>
+            <Dynamic>\pwm_generator/motor_3_rate[7]</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v(34): </Dynamic>
+            <Dynamic>\pwm_generator/motor_4_rate[7]</Dynamic>
+            <Navigation>c:/lscc/projects/motor_controller/impl1/source/pwm_generator.v</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\pwm_generator/pwm1/state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>8</Dynamic>
+            <Dynamic>\pwm_generator/m1_rate</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>9</Dynamic>
+            <Dynamic>\pwm_generator/m1_rate</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

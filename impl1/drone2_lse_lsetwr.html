@@ -1,0 +1,372 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Mon Aug 27 11:43:34 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     drone2
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets sys_clk]
+            608 items scored, 469 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 3.947ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \us_clk_divider/sys_clk_counter_i0  (from sys_clk +)
+   Destination:    FD1S3IX    CD             \us_clk_divider/sys_clk_counter_i8  (to sys_clk +)
+
+   Delay:                   8.801ns  (30.0% logic, 70.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      8.801ns data_path \us_clk_divider/sys_clk_counter_i0 to \us_clk_divider/sys_clk_counter_i8 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 3.947ns
+
+ Path Details: \us_clk_divider/sys_clk_counter_i0 to \us_clk_divider/sys_clk_counter_i8
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \us_clk_divider/sys_clk_counter_i0 (from sys_clk)
+Route         2   e 1.002                                  \us_clk_divider/sys_clk_counter[0]
+LUT4        ---     0.448              D to Z              \us_clk_divider/i7_4_lut
+Route         1   e 0.788                                  \us_clk_divider/n18_adj_299
+LUT4        ---     0.448              B to Z              \us_clk_divider/i9_4_lut
+Route         1   e 0.788                                  \us_clk_divider/n20_adj_297
+LUT4        ---     0.448              B to Z              \us_clk_divider/i10_4_lut
+Route         2   e 0.954                                  \us_clk_divider/n694
+LUT4        ---     0.448              C to Z              \us_clk_divider/i3_4_lut
+Route         4   e 1.120                                  \us_clk_divider/n29
+LUT4        ---     0.448              B to Z              \us_clk_divider/i1565_2_lut_2_lut
+Route        13   e 1.506                                  \us_clk_divider/n950
+                  --------
+                    8.801  (30.0% logic, 70.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 3.947ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \us_clk_divider/sys_clk_counter_i0  (from sys_clk +)
+   Destination:    FD1S3IX    CD             \us_clk_divider/sys_clk_counter_i8  (to sys_clk +)
+
+   Delay:                   8.801ns  (30.0% logic, 70.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      8.801ns data_path \us_clk_divider/sys_clk_counter_i0 to \us_clk_divider/sys_clk_counter_i8 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 3.947ns
+
+ Path Details: \us_clk_divider/sys_clk_counter_i0 to \us_clk_divider/sys_clk_counter_i8
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \us_clk_divider/sys_clk_counter_i0 (from sys_clk)
+Route         2   e 1.002                                  \us_clk_divider/sys_clk_counter[0]
+LUT4        ---     0.448              D to Z              \us_clk_divider/i7_4_lut
+Route         1   e 0.788                                  \us_clk_divider/n18_adj_299
+LUT4        ---     0.448              B to Z              \us_clk_divider/i9_4_lut
+Route         1   e 0.788                                  \us_clk_divider/n20_adj_297
+LUT4        ---     0.448              B to Z              \us_clk_divider/i10_4_lut
+Route         2   e 0.954                                  \us_clk_divider/n694
+LUT4        ---     0.448              A to Z              \us_clk_divider/i3_4_lut_rep_12
+Route         4   e 1.120                                  \us_clk_divider/n1792
+LUT4        ---     0.448              A to Z              \us_clk_divider/i1565_2_lut_2_lut
+Route        13   e 1.506                                  \us_clk_divider/n950
+                  --------
+                    8.801  (30.0% logic, 70.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 3.947ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \us_clk_divider/sys_clk_counter_i0  (from sys_clk +)
+   Destination:    FD1S3IX    CD             \us_clk_divider/sys_clk_counter_i7  (to sys_clk +)
+
+   Delay:                   8.801ns  (30.0% logic, 70.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      8.801ns data_path \us_clk_divider/sys_clk_counter_i0 to \us_clk_divider/sys_clk_counter_i7 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 3.947ns
+
+ Path Details: \us_clk_divider/sys_clk_counter_i0 to \us_clk_divider/sys_clk_counter_i7
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \us_clk_divider/sys_clk_counter_i0 (from sys_clk)
+Route         2   e 1.002                                  \us_clk_divider/sys_clk_counter[0]
+LUT4        ---     0.448              D to Z              \us_clk_divider/i7_4_lut
+Route         1   e 0.788                                  \us_clk_divider/n18_adj_299
+LUT4        ---     0.448              B to Z              \us_clk_divider/i9_4_lut
+Route         1   e 0.788                                  \us_clk_divider/n20_adj_297
+LUT4        ---     0.448              B to Z              \us_clk_divider/i10_4_lut
+Route         2   e 0.954                                  \us_clk_divider/n694
+LUT4        ---     0.448              A to Z              \us_clk_divider/i3_4_lut_rep_12
+Route         4   e 1.120                                  \us_clk_divider/n1792
+LUT4        ---     0.448              A to Z              \us_clk_divider/i1565_2_lut_2_lut
+Route        13   e 1.506                                  \us_clk_divider/n950
+                  --------
+                    8.801  (30.0% logic, 70.0% route), 6 logic levels.
+
+Warning: 8.947 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets us_clk]
+            1078 items scored, 1078 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 4.826ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \pwm_generator/period_counter__i6  (from us_clk +)
+   Destination:    FD1S3AX    D              \pwm_generator/pwm1/state_FSM_i1  (to us_clk +)
+
+   Delay:                   9.680ns  (31.9% logic, 68.1% route), 7 logic levels.
+
+ Constraint Details:
+
+      9.680ns data_path \pwm_generator/period_counter__i6 to \pwm_generator/pwm1/state_FSM_i1 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 4.826ns
+
+ Path Details: \pwm_generator/period_counter__i6 to \pwm_generator/pwm1/state_FSM_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \pwm_generator/period_counter__i6 (from us_clk)
+Route         3   e 1.099                                  \pwm_generator/period_counter[6]
+LUT4        ---     0.448              A to Z              \pwm_generator/i1516_2_lut
+Route         1   e 0.788                                  \pwm_generator/n1713
+LUT4        ---     0.448              C to Z              \pwm_generator/i2_4_lut
+Route         2   e 0.954                                  \pwm_generator/n1582
+LUT4        ---     0.448              C to Z              \pwm_generator/i2_2_lut_3_lut_adj_7
+Route         1   e 0.788                                  \pwm_generator/n6_adj_294
+LUT4        ---     0.448              C to Z              \pwm_generator/i1549_4_lut_rep_11
+Route        12   e 1.384                                  \pwm_generator/us_clk_enable_1
+LUT4        ---     0.448              A to Z              \pwm_generator/pwm1/i1_2_lut
+Route         1   e 0.788                                  \pwm_generator/pwm1/n3
+LUT4        ---     0.448              C to Z              \pwm_generator/pwm1/i1_4_lut
+Route         1   e 0.788                                  \pwm_generator/pwm1/n1524
+                  --------
+                    9.680  (31.9% logic, 68.1% route), 7 logic levels.
+
+
+Error:  The following path violates requirements by 4.826ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \pwm_generator/period_counter__i6  (from us_clk +)
+   Destination:    FD1S3AY    D              \pwm_generator/pwm1/state_FSM_i2  (to us_clk +)
+
+   Delay:                   9.680ns  (31.9% logic, 68.1% route), 7 logic levels.
+
+ Constraint Details:
+
+      9.680ns data_path \pwm_generator/period_counter__i6 to \pwm_generator/pwm1/state_FSM_i2 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 4.826ns
+
+ Path Details: \pwm_generator/period_counter__i6 to \pwm_generator/pwm1/state_FSM_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \pwm_generator/period_counter__i6 (from us_clk)
+Route         3   e 1.099                                  \pwm_generator/period_counter[6]
+LUT4        ---     0.448              A to Z              \pwm_generator/i1516_2_lut
+Route         1   e 0.788                                  \pwm_generator/n1713
+LUT4        ---     0.448              C to Z              \pwm_generator/i2_4_lut
+Route         2   e 0.954                                  \pwm_generator/n1582
+LUT4        ---     0.448              C to Z              \pwm_generator/i2_2_lut_3_lut_adj_7
+Route         1   e 0.788                                  \pwm_generator/n6_adj_294
+LUT4        ---     0.448              C to Z              \pwm_generator/i1549_4_lut_rep_11
+Route        12   e 1.384                                  \pwm_generator/us_clk_enable_1
+LUT4        ---     0.448              B to Z              \pwm_generator/pwm4/i1_4_lut_4_lut
+Route         1   e 0.788                                  \pwm_generator/n4
+LUT4        ---     0.448              D to Z              \pwm_generator/pwm1/i2_3_lut_4_lut
+Route         1   e 0.788                                  \pwm_generator/pwm1/n1423
+                  --------
+                    9.680  (31.9% logic, 68.1% route), 7 logic levels.
+
+
+Error:  The following path violates requirements by 4.826ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \pwm_generator/period_counter__i7  (from us_clk +)
+   Destination:    FD1S3AX    D              \pwm_generator/pwm1/state_FSM_i1  (to us_clk +)
+
+   Delay:                   9.680ns  (31.9% logic, 68.1% route), 7 logic levels.
+
+ Constraint Details:
+
+      9.680ns data_path \pwm_generator/period_counter__i7 to \pwm_generator/pwm1/state_FSM_i1 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 4.826ns
+
+ Path Details: \pwm_generator/period_counter__i7 to \pwm_generator/pwm1/state_FSM_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \pwm_generator/period_counter__i7 (from us_clk)
+Route         3   e 1.099                                  \pwm_generator/period_counter[7]
+LUT4        ---     0.448              B to Z              \pwm_generator/i1516_2_lut
+Route         1   e 0.788                                  \pwm_generator/n1713
+LUT4        ---     0.448              C to Z              \pwm_generator/i2_4_lut
+Route         2   e 0.954                                  \pwm_generator/n1582
+LUT4        ---     0.448              C to Z              \pwm_generator/i2_2_lut_3_lut_adj_7
+Route         1   e 0.788                                  \pwm_generator/n6_adj_294
+LUT4        ---     0.448              C to Z              \pwm_generator/i1549_4_lut_rep_11
+Route        12   e 1.384                                  \pwm_generator/us_clk_enable_1
+LUT4        ---     0.448              A to Z              \pwm_generator/pwm1/i1_2_lut
+Route         1   e 0.788                                  \pwm_generator/pwm1/n3
+LUT4        ---     0.448              C to Z              \pwm_generator/pwm1/i1_4_lut
+Route         1   e 0.788                                  \pwm_generator/pwm1/n1524
+                  --------
+                    9.680  (31.9% logic, 68.1% route), 7 logic levels.
+
+Warning: 9.826 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets sys_clk]                 |     5.000 ns|     8.947 ns|     6 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets us_clk]                  |     5.000 ns|     9.826 ns|     7 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\pwm_generator/n718                     |       3|     438|     28.31%
+                                        |        |        |
+\pwm_generator/high_counter_9__N_250    |      30|     429|     27.73%
+                                        |        |        |
+\us_clk_divider/n950                    |      13|     390|     25.21%
+                                        |        |        |
+\pwm_generator/us_clk_enable_1          |      12|     359|     23.21%
+                                        |        |        |
+\us_clk_divider/n694                    |       2|     352|     22.75%
+                                        |        |        |
+\pwm_generator/n12_adj_296              |       1|     312|     20.17%
+                                        |        |        |
+\pwm_generator/us_clk_enable_28         |      10|     280|     18.10%
+                                        |        |        |
+\pwm_generator/n954                     |       9|     252|     16.29%
+                                        |        |        |
+\us_clk_divider/n29                     |       4|     234|     15.13%
+                                        |        |        |
+\us_clk_divider/n1792                   |       4|     234|     15.13%
+                                        |        |        |
+\us_clk_divider/n20_adj_297             |       1|     224|     14.48%
+                                        |        |        |
+\pwm_generator/n6_adj_294               |       1|     184|     11.89%
+                                        |        |        |
+\pwm_generator/n1701                    |       1|     178|     11.51%
+                                        |        |        |
+\pwm_generator/n1582                    |       2|     157|     10.15%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 1547  Score: 3722601
+
+Constraints cover  3037 paths, 288 nets, and 742 connections (88.3% coverage)
+
+
+Peak memory: 66011136 bytes, TRCE: 2998272 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

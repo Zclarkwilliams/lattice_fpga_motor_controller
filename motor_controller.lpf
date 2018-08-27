@@ -1,2 +1,14 @@
-BLOCK RESETPATHS;
-BLOCK ASYNCPATHS;
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+LOCATE COMP "machxo3_switch_reset_n" SITE "N1" ;
+LOCATE COMP "machxo3_switch_leds_disp" SITE "N2" ;
+LOCATE COMP "led_data_out[0]" SITE "P16" ;
+LOCATE COMP "led_data_out[1]" SITE "N15" ;
+LOCATE COMP "led_data_out[2]" SITE "L13" ;
+LOCATE COMP "led_data_out[3]" SITE "K11" ;
+LOCATE COMP "led_data_out[4]" SITE "L12" ;
+LOCATE COMP "led_data_out[5]" SITE "J11" ;
+LOCATE COMP "led_data_out[6]" SITE "J13" ;
+LOCATE COMP "led_data_out[7]" SITE "H11" ;
+LOCATE COMP "motor_1_pwm" SITE "L7" ;
+LOCATE COMP "throttle_pwm" SITE "R6" ;

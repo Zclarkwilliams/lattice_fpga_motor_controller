@@ -1,0 +1,20 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Mon Aug 27 12:03:18 2018 *
+NOTE DESIGN NAME: drone2 *
+NOTE DEVICE NAME: LCMXO3LF-6900C-5CABGA256 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS motor_1_pwm : L7 : out *
+NOTE PINS led_data_out[7] : H11 : out *
+NOTE PINS led_data_out[6] : J13 : out *
+NOTE PINS led_data_out[5] : J11 : out *
+NOTE PINS led_data_out[4] : L12 : out *
+NOTE PINS led_data_out[3] : K11 : out *
+NOTE PINS led_data_out[2] : L13 : out *
+NOTE PINS led_data_out[1] : N15 : out *
+NOTE PINS led_data_out[0] : P16 : out *
+NOTE PINS throttle_pwm : R6 : in *
+NOTE PINS machxo3_switch_leds_disp : N2 : in *
+NOTE PINS machxo3_switch_reset_n : N1 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

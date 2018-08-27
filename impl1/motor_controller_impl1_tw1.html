@@ -1,0 +1,302 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file motor_controller_impl1_map.ncd.
+Design name: drone2
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-6900C
+Package:     CABGA256
+Performance: 5
+Loading device for application trce from file 'xo3c6900.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.16.
+Performance Hardware Data Status:   Final          Version 37.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.1.112</big></U></B>
+Mon Aug 27 12:02:37 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o motor_controller_impl1.tw1 -gui -msgset C:/lscc/Projects/motor_controller/promote.xml motor_controller_impl1_map.ncd motor_controller_impl1.prf 
+Design file:     motor_controller_impl1_map.ncd
+Preference file: motor_controller_impl1.prf
+Device,speed:    LCMXO3LF-6900C,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_0_0' Target='right'>FREQUENCY NET "sys_clk" 38.000000 MHz (0 errors)</A></LI>            459 items scored, 0 timing errors detected.
+Report:  118.092MHz is the maximum frequency for this preference.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "sys_clk" 38.000000 MHz ;
+            459 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 17.848ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              us_clk_divider/sys_clk_counter_i10  (from sys_clk +)
+   Destination:    FF         Data in        us_clk_divider/sys_clk_counter_i6  (to sys_clk +)
+                   FF                        us_clk_divider/sys_clk_counter_i5
+
+   Delay:               8.220ns  (32.5% logic, 67.5% route), 6 logic levels.
+
+ Constraint Details:
+
+      8.220ns physical path delay us_clk_divider/SLICE_12 to us_clk_divider/SLICE_14 meets
+     26.316ns delay constraint less
+      0.248ns LSR_SET requirement (totaling 26.068ns) by 17.848ns
+
+ Physical Path Details:
+
+      Data path us_clk_divider/SLICE_12 to us_clk_divider/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 */SLICE_12.CLK to *r/SLICE_12.Q1 us_clk_divider/SLICE_12 (from sys_clk)
+ROUTE         2   e 1.030 *r/SLICE_12.Q1 to *r/SLICE_87.A1 us_clk_divider/sys_clk_counter_10
+CTOF_DEL    ---     0.452 *r/SLICE_87.A1 to *r/SLICE_87.F1 us_clk_divider/SLICE_87
+ROUTE         1   e 0.401 *r/SLICE_87.F1 to *r/SLICE_87.B0 us_clk_divider/n18_adj_299
+CTOF_DEL    ---     0.452 *r/SLICE_87.B0 to *r/SLICE_87.F0 us_clk_divider/SLICE_87
+ROUTE         1   e 1.030 *r/SLICE_87.F0 to *r/SLICE_86.B0 us_clk_divider/n20_adj_297
+CTOF_DEL    ---     0.452 *r/SLICE_86.B0 to *r/SLICE_86.F0 us_clk_divider/SLICE_86
+ROUTE         2   e 1.030 *r/SLICE_86.F0 to *r/SLICE_84.C1 us_clk_divider/n694
+CTOF_DEL    ---     0.452 *r/SLICE_84.C1 to *r/SLICE_84.F1 us_clk_divider/SLICE_84
+ROUTE         4   e 1.030 *r/SLICE_84.F1 to *r/SLICE_79.B1 us_clk_divider/n29
+CTOF_DEL    ---     0.452 *r/SLICE_79.B1 to *r/SLICE_79.F1 us_clk_divider/SLICE_79
+ROUTE         8   e 1.030 *r/SLICE_79.F1 to */SLICE_14.LSR us_clk_divider/n950 (to sys_clk)
+                  --------
+                    8.220   (32.5% logic, 67.5% route), 6 logic levels.
+
+Report:  118.092MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "sys_clk" 38.000000 MHz ; |   38.000 MHz|  118.092 MHz|   6  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: us_clk   Source: us_clk_divider/SLICE_79.Q0   Loads: 47
+   No transfer within this clock domain is found
+
+Clock Domain: sys_clk   Source: OSCH_inst.OSC   Loads: 18
+   Covered under: FREQUENCY NET "sys_clk" 38.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: us_clk   Source: us_clk_divider/SLICE_79.Q0
+      Covered under: FREQUENCY NET "sys_clk" 38.000000 MHz ;   Transfers: 8
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 467 paths, 1 nets, and 627 connections (82.18% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.1.112</big></U></B>
+Mon Aug 27 12:02:37 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o motor_controller_impl1.tw1 -gui -msgset C:/lscc/Projects/motor_controller/promote.xml motor_controller_impl1_map.ncd motor_controller_impl1.prf 
+Design file:     motor_controller_impl1_map.ncd
+Preference file: motor_controller_impl1.prf
+Device,speed:    LCMXO3LF-6900C,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "sys_clk" 38.000000 MHz (0 errors)</A></LI>            459 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "sys_clk" 38.000000 MHz ;
+            459 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              us_clk_divider/sys_clk_counter_i10  (from sys_clk +)
+   Destination:    FF         Data in        us_clk_divider/sys_clk_counter_i10  (to sys_clk +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay us_clk_divider/SLICE_12 to us_clk_divider/SLICE_12 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path us_clk_divider/SLICE_12 to us_clk_divider/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_12.CLK to *r/SLICE_12.Q1 us_clk_divider/SLICE_12 (from sys_clk)
+ROUTE         2   e 0.199 *r/SLICE_12.Q1 to *r/SLICE_12.A1 us_clk_divider/sys_clk_counter_10
+CTOF_DEL    ---     0.101 *r/SLICE_12.A1 to *r/SLICE_12.F1 us_clk_divider/SLICE_12
+ROUTE         1   e 0.001 *r/SLICE_12.F1 to */SLICE_12.DI1 us_clk_divider/n12 (to sys_clk)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "sys_clk" 38.000000 MHz ; |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: us_clk   Source: us_clk_divider/SLICE_79.Q0   Loads: 47
+   No transfer within this clock domain is found
+
+Clock Domain: sys_clk   Source: OSCH_inst.OSC   Loads: 18
+   Covered under: FREQUENCY NET "sys_clk" 38.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: us_clk   Source: us_clk_divider/SLICE_79.Q0
+      Covered under: FREQUENCY NET "sys_clk" 38.000000 MHz ;   Transfers: 8
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 467 paths, 1 nets, and 627 connections (82.18% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

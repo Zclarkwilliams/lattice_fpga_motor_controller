@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/lscc/Projects/motor_controller/promote.xml" version="Diamond (64-bit) 3.10.1.112" date="Wed Aug 22 10:34:36 2018" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/lscc/Projects/motor_controller/promote.xml" version="Diamond (64-bit) 3.10.1.112" date="Mon Aug 27 12:15:22 2018" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="35931002" type="Warning" />
+  <msg mid="35901209" type="Warning" />
+  <msg mid="35901328" type="Info" />
 </userSetting>

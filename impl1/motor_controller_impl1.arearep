@@ -1,0 +1,115 @@
+----------------------------------------------------------------------
+Report for cell drone2.TECH
+Register bits:  98 of 7485 (1.309%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        35          100.0
+                            FD1P3AX        26          100.0
+                            FD1P3IX        12          100.0
+                            FD1P3JX         6          100.0
+                            FD1S3AX         8          100.0
+                            FD1S3AY         2          100.0
+                            FD1S3IX        40          100.0
+                            FD1S3JX         4          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                               LUT4       120          100.0
+                                 OB         9          100.0
+                               OSCH         1          100.0
+                              PFUMX         2          100.0
+SUB MODULES
+                      pwm_generator         1
+                pwm_generator_block         1
+             pwm_generator_block_U0         1
+pwm_reader(DEFAULT_PWM_TIME_HIGH_US=16'b01111101000)         1
+                       pwm_to_value         1
+                           receiver         1
+                             us_clk         1
+                              TOTAL       276
+----------------------------------------------------------------------
+Report for cell receiver.v1
+Instance Path : receiver
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           25.7
+                            FD1P3AX        18           69.2
+                            FD1P3IX         1            8.3
+                            FD1P3JX         6          100.0
+                            FD1S3AX         4           50.0
+                            FD1S3IX         7           17.5
+                               LUT4        70           58.3
+                              PFUMX         1           50.0
+SUB MODULES
+pwm_reader(DEFAULT_PWM_TIME_HIGH_US=16'b01111101000)         1
+                       pwm_to_value         1
+                              TOTAL       118
+----------------------------------------------------------------------
+Report for cell pwm_reader(DEFAULT_PWM_TIME_HIGH_US=16'b01111101000).v1
+Instance Path : receiver.throttle_reader
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           25.7
+                            FD1P3AX        18           69.2
+                            FD1P3IX         1            8.3
+                            FD1P3JX         6          100.0
+                            FD1S3AX         2           25.0
+                            FD1S3IX         1            2.5
+                               LUT4        48           40.0
+                              PFUMX         1           50.0
+                              TOTAL        86
+----------------------------------------------------------------------
+Report for cell pwm_to_value.v1
+Instance Path : receiver.throttle_pwm_to_value
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         2           25.0
+                            FD1S3IX         6           15.0
+                               LUT4        22           18.3
+                              TOTAL        30
+----------------------------------------------------------------------
+Report for cell us_clk.v1
+Instance Path : us_clk_divider
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8           22.9
+                            FD1S3AX         2           25.0
+                            FD1S3AY         1           50.0
+                            FD1S3IX        13           32.5
+                               LUT4        12           10.0
+                              TOTAL        36
+----------------------------------------------------------------------
+Report for cell pwm_generator.v1
+Instance Path : pwm_generator
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        18           51.4
+                            FD1P3AX         8           30.8
+                            FD1P3IX        11           91.7
+                            FD1S3AX         2           25.0
+                            FD1S3AY         1           50.0
+                            FD1S3IX        16           40.0
+                               LUT4        32           26.7
+                              PFUMX         1           50.0
+SUB MODULES
+                pwm_generator_block         1
+             pwm_generator_block_U0         1
+                              TOTAL        91
+----------------------------------------------------------------------
+Report for cell pwm_generator_block.v1
+Instance Path : pwm_generator.pwm4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         2            1.7
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell pwm_generator_block_U0.v1
+Instance Path : pwm_generator.pwm1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         4           11.4
+                            FD1S3AX         2           25.0
+                            FD1S3AY         1           50.0
+                               LUT4         7            5.8
+                              PFUMX         1           50.0
+                              TOTAL        15

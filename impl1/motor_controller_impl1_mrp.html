@@ -1,0 +1,430 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+            Lattice Mapping Report File for Design Module 'drone2'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO3LF -p LCMXO3LF-6900C -t CABGA256 -s 5 -oc
+     Commercial motor_controller_impl1.ngd -o motor_controller_impl1_map.ncd -pr
+     motor_controller_impl1.prf -mp motor_controller_impl1.mrp -lpf
+     C:/lscc/Projects/motor_controller/impl1/motor_controller_impl1.lpf -lpf
+     C:/lscc/Projects/motor_controller/motor_controller.lpf -c 0 -gui -msgset
+     C:/lscc/Projects/motor_controller/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO3LF-6900CCABGA256
+Target Performance:   5
+Mapper:  xo3c00f,  version:  Diamond (64-bit) 3.10.1.112
+Mapped on:  08/27/18  12:02:30
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     98 out of  7485 (1%)
+      PFU registers:           98 out of  6864 (1%)
+      PIO registers:            0 out of   621 (0%)
+   Number of SLICEs:        99 out of  3432 (3%)
+      SLICEs as Logic/ROM:     99 out of  3432 (3%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:         35 out of  3432 (1%)
+   Number of LUT4s:        189 out of  6864 (3%)
+      Number used as logic LUTs:        119
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       70
+      Number used as shift registers:     0
+   Number of PIO sites used: 12 + 4(JTAG) out of 207 (8%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net sys_clk: 18 loads, 18 rising, 0 falling (Driver: OSCH_inst )
+     Net us_clk: 46 loads, 46 rising, 0 falling (Driver:
+
+     us_clk_divider/us_clk_16 )
+   Number of Clock Enables:  7
+     Net receiver/throttle_reader/us_clk_enable_35: 6 loads, 6 LSLICEs
+     Net receiver/throttle_reader/us_clk_enable_18: 1 loads, 1 LSLICEs
+     Net receiver/throttle_reader/us_clk_enable_36: 1 loads, 1 LSLICEs
+     Net receiver/throttle_reader/us_clk_enable_16: 7 loads, 7 LSLICEs
+     Net pwm_generator/high_counter_9__N_250: 4 loads, 4 LSLICEs
+     Net pwm_generator/us_clk_enable_1: 1 loads, 1 LSLICEs
+     Net pwm_generator/us_clk_enable_28: 6 loads, 6 LSLICEs
+   Number of LSRs:  8
+     Net machxo3_switch_reset_n_c: 7 loads, 7 LSLICEs
+     Net n1796: 4 loads, 4 LSLICEs
+     Net receiver/throttle_reader/state_2: 1 loads, 1 LSLICEs
+     Net receiver/throttle_reader/n959: 4 loads, 4 LSLICEs
+     Net receiver/throttle_reader/n1037: 1 loads, 1 LSLICEs
+     Net us_clk_divider/n950: 8 loads, 8 LSLICEs
+     Net pwm_generator/high_counter_9__N_250: 11 loads, 11 LSLICEs
+     Net pwm_generator/n954: 6 loads, 6 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net receiver/throttle_reader/state_1: 35 loads
+     Net machxo3_switch_reset_n_c: 33 loads
+     Net receiver/throttle_reader/state_0: 26 loads
+     Net receiver/throttle_reader/state_2: 26 loads
+     Net state_2__N_92_c_1: 24 loads
+     Net receiver/throttle_reader/pwm_pulse_level_flag: 22 loads
+     Net pwm_generator/high_counter_9__N_250: 19 loads
+     Net receiver/throttle_reader/n1795: 15 loads
+     Net pwm_generator/us_clk_enable_1: 12 loads
+     Net receiver/throttle_reader/n106: 8 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| motor_1_pwm         | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_data_out[7]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_data_out[6]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+| led_data_out[5]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_data_out[4]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_data_out[3]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_data_out[2]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_data_out[1]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_data_out[0]     | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| throttle_pwm        | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| machxo3_switch_leds_disp| INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| machxo3_switch_reset_n| INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block i1575 undriven or does not drive anything - clipped.
+Signal n1799 was merged into signal machxo3_switch_reset_n_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal pwm_generator/pwm1/equal_11_0/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_generator/pwm1/equal_11_0/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_generator/pwm1/equal_11_0/CI undriven or does not drive anything -
+     clipped.
+Signal pwm_generator/pwm1/equal_11_10/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_generator/pwm1/equal_11_10/CO undriven or does not drive anything -
+     clipped.
+Signal pwm_generator/pwm1/equal_11_8/S1 undriven or does not drive anything -
+     clipped.
+Signal pwm_generator/pwm1/equal_11_8/S0 undriven or does not drive anything -
+     clipped.
+Signal pwm_generator/pwm1/equal_11_10_1192/S1 undriven or does not drive
+     anything - clipped.
+Signal pwm_generator/pwm1/equal_11_10_1192/S0 undriven or does not drive
+     anything - clipped.
+Signal pwm_generator/add_7_17/S1 undriven or does not drive anything - clipped.
+Signal pwm_generator/add_7_17/CO undriven or does not drive anything - clipped.
+Signal pwm_generator/add_8_2/S0 undriven or does not drive anything - clipped.
+Signal pwm_generator/add_8_2/CI undriven or does not drive anything - clipped.
+Signal pwm_generator/add_8_10/CO undriven or does not drive anything - clipped.
+Signal pwm_generator/add_7_1/S0 undriven or does not drive anything - clipped.
+Signal pwm_generator/add_7_1/CI undriven or does not drive anything - clipped.
+Signal us_clk_divider/add_7_15/CO undriven or does not drive anything - clipped.
+     
+Signal us_clk_divider/add_7_1/S0 undriven or does not drive anything - clipped.
+Signal us_clk_divider/add_7_1/CI undriven or does not drive anything - clipped.
+Signal receiver/throttle_reader/add_152_1/S0 undriven or does not drive anything
+
+     - clipped.
+Signal receiver/throttle_reader/add_152_1/CI undriven or does not drive anything
+     - clipped.
+Signal receiver/throttle_reader/add_152_17/S1 undriven or does not drive
+     anything - clipped.
+Signal receiver/throttle_reader/add_152_17/CO undriven or does not drive
+     anything - clipped.
+Block pwm_generator/pwm4/resetn_I_0_1_lut_rep_19 was optimized away.
+Block i1 was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+
+     
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSCH_inst
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     sys_clk
+  OSC Nominal Frequency (MHz):                      38.00
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: OSCH_inst
+         Type: OSCH
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is
+        'machxo3_switch_reset_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'machxo3_switch_reset_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 8 
+
+
+     Type and instance name of component: 
+   Register : led_data_out_i1
+   Register : led_data_out_i7
+   Register : led_data_out_i6
+   Register : led_data_out_i5
+   Register : led_data_out_i4
+   Register : led_data_out_i3
+   Register : led_data_out_i2
+   Register : led_data_out_i8
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'machxo3_switch_reset_n_c'
+     via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 54 
+
+     Type and instance name of component: 
+   Register : receiver/throttle_reader/state_i2
+   Register : receiver/throttle_reader/time_high_us_i9
+   Register : receiver/throttle_reader/time_high_us_i8
+   Register : receiver/throttle_reader/time_high_us_i7
+   Register : receiver/throttle_reader/time_high_us_i6
+   Register : receiver/throttle_reader/time_high_us_i5
+   Register : receiver/throttle_reader/time_high_us_i3
+   Register : receiver/throttle_reader/pwm_pulse_level_flag_48
+   Register : receiver/throttle_pwm_to_value/adjusted_value_i1
+   Register : receiver/throttle_pwm_to_value/adjusted_value_i4
+   Register : receiver/throttle_pwm_to_value/adjusted_value_i5
+   Register : receiver/throttle_pwm_to_value/adjusted_value_i6
+   Register : receiver/throttle_pwm_to_value/adjusted_value_i7
+   Register : receiver/throttle_pwm_to_value/adjusted_value_i8
+   Register : us_clk_divider/sys_clk_counter_i8
+   Register : us_clk_divider/sys_clk_counter_i7
+   Register : us_clk_divider/sys_clk_counter_i6
+   Register : us_clk_divider/sys_clk_counter_i5
+   Register : us_clk_divider/sys_clk_counter_i0
+   Register : us_clk_divider/sys_clk_counter_i3
+   Register : us_clk_divider/sys_clk_counter_i1
+   Register : us_clk_divider/sys_clk_counter_i10
+   Register : us_clk_divider/sys_clk_counter_i11
+   Register : us_clk_divider/sys_clk_counter_i12
+   Register : us_clk_divider/sys_clk_counter_i13
+   Register : us_clk_divider/sys_clk_counter_i14
+   Register : us_clk_divider/sys_clk_counter_i9
+   Register : pwm_generator/period_counter__i0
+   Register : pwm_generator/high_counter_en_28
+   Register : pwm_generator/high_counter__i0
+   Register : pwm_generator/period_counter__i2
+   Register : pwm_generator/period_counter__i3
+   Register : pwm_generator/period_counter__i4
+
+   Register : pwm_generator/period_counter__i5
+   Register : pwm_generator/period_counter__i6
+   Register : pwm_generator/period_counter__i7
+   Register : pwm_generator/period_counter__i8
+   Register : pwm_generator/period_counter__i9
+   Register : pwm_generator/period_counter__i10
+   Register : pwm_generator/period_counter__i11
+   Register : pwm_generator/period_counter__i12
+   Register : pwm_generator/period_counter__i13
+   Register : pwm_generator/period_counter__i14
+   Register : pwm_generator/period_counter__i15
+   Register : pwm_generator/high_counter__i1
+   Register : pwm_generator/high_counter__i2
+   Register : pwm_generator/high_counter__i3
+   Register : pwm_generator/high_counter__i4
+   Register : pwm_generator/high_counter__i5
+   Register : pwm_generator/high_counter__i6
+   Register : pwm_generator/high_counter__i7
+   Register : pwm_generator/high_counter__i8
+   Register : pwm_generator/high_counter__i9
+   Register : pwm_generator/period_counter__i1
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 2 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 59 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

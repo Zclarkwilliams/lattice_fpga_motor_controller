@@ -1,0 +1,83 @@
+---------------------------------------------------
+Report for cell drone2
+   Instance path: drone2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      99.00        100.0
+                                  LUT4	     119.00        100.0
+                                 IOBUF	         12        100.0
+                                PFUREG	         98        100.0
+                                RIPPLE	         35        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                us_clk	          1        14.1
+                         pwm_generator	          1        36.9
+                              receiver	          1        42.4
+---------------------------------------------------
+Report for cell receiver
+   Instance path: drone2/receiver
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      42.00        42.4
+                                  LUT4	      70.00        58.8
+                                PFUREG	         36        36.7
+                                RIPPLE	          9        25.7
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+pwm_reader(DEFAULT_PWM_TIME_HIGH_US=16'b01111101000)	          1        33.3
+                          pwm_to_value	          1         9.1
+---------------------------------------------------
+Report for cell pwm_reader(DEFAULT_PWM_TIME_HIGH_US=16'b01111101000)
+   Instance path: drone2/receiver/throttle_reader
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      33.00        33.3
+                                  LUT4	      48.00        40.3
+                                PFUREG	         28        28.6
+                                RIPPLE	          9        25.7
+---------------------------------------------------
+Report for cell pwm_to_value
+   Instance path: drone2/receiver/throttle_pwm_to_value
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.00         9.1
+                                  LUT4	      22.00        18.5
+                                PFUREG	          8         8.2
+---------------------------------------------------
+Report for cell us_clk
+   Instance path: drone2/us_clk_divider
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      14.00        14.1
+                                  LUT4	      12.00        10.1
+                                PFUREG	         16        16.3
+                                RIPPLE	          8        22.9
+---------------------------------------------------
+Report for cell pwm_generator
+   Instance path: drone2/pwm_generator
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      36.50        36.9
+                                  LUT4	      31.00        26.1
+                                PFUREG	         38        38.8
+                                RIPPLE	         18        51.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                   pwm_generator_block	          1         0.5
+                pwm_generator_block_U0	          1         7.6
+---------------------------------------------------
+Report for cell pwm_generator_block
+   Instance path: drone2/pwm_generator/pwm4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50         0.5
+                                  LUT4	       1.00         0.8
+---------------------------------------------------
+Report for cell pwm_generator_block_U0
+   Instance path: drone2/pwm_generator/pwm1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.50         7.6
+                                  LUT4	       7.00         5.9
+                                PFUREG	          3         3.1
+                                RIPPLE	          4        11.4
